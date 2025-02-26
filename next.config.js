@@ -5,6 +5,15 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+// const config = {};
+
+const config = {
+  images: {
+    domains: ["image.tmdb.org"], // ✅ Allow TMDB images
+  },
+  reactStrictMode: false,
+};
+
+// module.exports = nextConfig;
 
 export default config;
