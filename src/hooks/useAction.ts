@@ -3,17 +3,10 @@
 import { useEffect, useCallback, useState } from "react";
 
 import { type Movie } from "@/types/movie";
-import { type ApiResponse } from "@/types/api";
+
 
 import { 
  httpGetAction, 
- httpGetComedy,
- httpGetDocumentaries,
- httpGetHorror,
- httpGetOriginals,
- httpGetRomance,
- httpGetTopRated,
- httpGetTrending 
 } from "@/lib/api";
 
 
