@@ -60,6 +60,13 @@ async function httpGetDocumentaries() {
  return response.data.results;
 }
 
+// Search 
+async function httpGetSearch(searchQuery: string) {
+ const response = await axios.get<ApiResponse<Movie>>(`${API_URL}/movie?api_key=${API_KEY}&query=${searchQuery}`)
+ return response.data.results;
+
+}
+
 
 export {
  httpGetAction,
@@ -69,5 +76,6 @@ export {
  httpGetOriginals,
  httpGetRomance,
  httpGetTopRated,
- httpGetTrending
+ httpGetTrending,
+ httpGetSearch
 };
